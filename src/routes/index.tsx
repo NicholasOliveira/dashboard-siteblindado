@@ -6,11 +6,20 @@ import Route from './Route';
 import Home from '../pages/Home';
 import Dashboard from '../pages/Dashboard';
 
+import SSL from '../pages/SSL';
+import Loja from '../pages/Loja';
+import Blindagem from '../pages/Blindagem';
+import Sistema from '../pages/Sistema';
+
 export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Home} isPrivate />
       <Route path="/dashboard" component={Dashboard} isPrivate />
+      <Route path="/ssl" component={SSL} isPrivate />
+      <Route path="/loja" component={Loja} isPrivate />
+      <Route path="/Blindagem" component={Blindagem} isPrivate />
+      <Route path="/Sistema" component={Sistema} isPrivate />
     </Switch>
   );
 }

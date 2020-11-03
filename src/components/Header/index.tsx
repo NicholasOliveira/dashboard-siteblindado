@@ -7,9 +7,9 @@ import {
   Typography,
 } from '@material-ui/core';
 
-import { Menu as MenuIcon } from '@material-ui/icons';
+import { Menu as MenuIcon, ShoppingCart } from '@material-ui/icons';
 
-import { useStyles, ImgBrand } from './styles';
+import { useStyles, ImgBrand, BoxHeader, BoxCart } from './styles';
 import imageBrand from '../../assets/images/logo-site-blindado-transparent.png';
 
 const Header = ({
@@ -41,9 +41,15 @@ const Header = ({
             <MenuIcon />
           </IconButton>
 
-          <Typography variant="h6" noWrap>
-            <ImgBrand src={imageBrand} />
-          </Typography>
+          <BoxHeader>
+            <Typography variant="h6" noWrap>
+              <ImgBrand src={imageBrand} />
+            </Typography>
+            <BoxCart to="/cart">
+              <ShoppingCart />
+              <span>(<strong>2</strong> items)</span>
+            </BoxCart>
+          </BoxHeader>
         </Toolbar>
       </AppBar>
     </div>

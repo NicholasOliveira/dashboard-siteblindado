@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import {
   ListItemText,
@@ -10,6 +11,8 @@ import {
 } from '@material-ui/core';
 import { ExpandLess, ExpandMore } from '@material-ui/icons';
 import { useStyles } from './styles';
+
+import Icon from '@material-ui/core/Icon';
 
 const MenuBar = ({
   menuItems,
@@ -30,9 +33,10 @@ const MenuBar = ({
       if (!subOption.children) {
         return (
           <div key={subOption.name}>
+
             <ListItem button key={subOption.name}>
-              <Link to={subOption.url}>
-                <ListItemText inset primary={subOption.name} />
+              <Link className={classes.listitemIco} to={subOption.url}>
+                <Icon>{subOption.icon}</Icon><ListItemText className={classes.listitemText} inset primary={subOption.name} />
               </Link>
             </ListItem>
           </div>
@@ -42,6 +46,7 @@ const MenuBar = ({
       return (
         <div key={subOption.name}>
           <ListItem button onClick={() => handleClick(subOption.name)}>
+            <Icon>{subOption.icon}</Icon>
             <ListItemText inset primary={subOption.name} />
             {handleValue[subOption.name] ? <ExpandLess /> : <ExpandMore />}
           </ListItem>
@@ -60,12 +65,18 @@ const MenuBar = ({
   return (
     <div>
       <Drawer
-        variant="persistent"
+        variant="permanent"
         anchor="left"
         open={mobileOpen}
-        className={classes.drawer}
+        className={clsx(classes.drawer, {
+          [classes.drawerOpen]: mobileOpen,
+          [classes.drawerClose]: !mobileOpen,
+        })}
         classes={{
-          paper: classes.drawerPaper,
+          paper: clsx({
+            [classes.drawerOpen]: mobileOpen,
+            [classes.drawerClose]: !mobileOpen,
+          }),
         }}
       >
         <div>

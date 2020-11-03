@@ -2,22 +2,27 @@ const menuIndex = {
   data: [
     {
       name: 'Dashboard',
-      url: '/item1',
+      url: '/dashboard',
+      icon: 'view_quilt',
     },
     {
       name: 'Certificados SSL',
-      url: '/item1',
+      url: '/ssl',
+      icon: 'lock_icon',
     },
     {
       name: 'Blindagem de site',
-      url: '/item1',
+      url: '/blindagem',
+      icon: 'phonelinklock_icon',
     },
     {
       name: 'Loja',
-      url: '/item2',
+      url: '/loja',
+      icon: 'store_icon',
     },
     {
       name: 'WAF',
+      icon: 'shop_icon',
       children: [
         {
           name: 'Child31',
@@ -37,10 +42,12 @@ const menuIndex = {
   system: [
     {
       name: 'Sistema',
-      url: '/item1',
+      url: '/sistema',
+      icon: 'build_icon',
     },
     {
       name: 'Organizações',
+      icon: 'business_icon',
       children: [
         {
           name: 'Child41',

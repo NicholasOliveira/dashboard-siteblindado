@@ -10,6 +10,7 @@ import store from './store';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
+
   return (
     <Provider store={store}>
       <Router history={history}>
