@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nicholasoliveira.github.io/desafio_front/build/",
   "dependencies": {
     "@babel/core": "7.6.0",
     "@devexpress/dx-react-chart": "^2.7.2",
