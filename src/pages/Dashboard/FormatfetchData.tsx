@@ -20,6 +20,14 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 'bold',
     padding: '10px 0px 5px',
   },
+  [theme.breakpoints.down('md')]: {
+    graph: {
+      width: '100% !important',
+    },
+    graph1: {
+      width: '100% !important',
+    },
+  },
   graph: {
     width: '35%',
     height: '20%',
@@ -55,7 +63,7 @@ function FetchData(setLoad: any) {
       setLoad(false);
     }
     LoadData();
-  }, []);
+  }, [setLoad]);
 
   useEffect(() => {
     Object.values(data).map((a: any) =>

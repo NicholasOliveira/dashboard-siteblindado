@@ -1,5 +1,6 @@
 export const ProductsList = [
   {
+    id: 1,
     category: 'blindagem_sites',
     name: 'Blindagem de Sites',
     img: 'https://www.siteblindado.com/images/blindagem-site-blindado.jpg',
@@ -8,6 +9,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/blindagem/',
   },
   {
+    id: 2,
     category: 'blindagem_sites',
     name: 'Blindagem Premium',
     img: 'https://www.siteblindado.com/images/blindagem-site-blindado.jpg',
@@ -16,6 +18,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/blindagem/',
   },
   {
+    id: 3,
     category: 'certificado_ssl',
     name: 'SSL Blindado - Basic',
     img:
@@ -25,6 +28,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/certificados-ssl/',
   },
   {
+    id: 4,
     category: 'certificado_ssl',
     name: 'SSL Blindado EV',
     img:
@@ -34,6 +38,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/certificados-ssl/',
   },
   {
+    id: 5,
     category: 'certificado_ssl',
     name: 'Certificado Multidomínio (MDC)',
     img:
@@ -43,6 +48,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/waf/',
   },
   {
+    id: 6,
     category: 'waf',
     name: 'WAF',
     img:
@@ -52,6 +58,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/waf/',
   },
   {
+    id: 7,
     category: 'penteste',
     name: 'PenTest Nível I',
     img: 'https://www.siteblindado.com/images/pentest-penetration-test.jpg',
@@ -60,6 +67,7 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/pentest/',
   },
   {
+    id: 8,
     category: 'penteste',
     name: 'PenTest Nível II',
     img: 'https://www.siteblindado.com/images/pentest-penetration-test.jpg',
@@ -68,11 +76,12 @@ export const ProductsList = [
     btn: 'https://www.siteblindado.com/solucoes/pentest/',
   },
   {
+    id: 9,
     category: 'penteste',
     name: 'PenTest Mobile',
     img: 'https://www.siteblindado.com/images/pentest-penetration-test.jpg',
     description:
       'Esse teste consiste na diminuição da superfície de ataque - locais de aplicação que podem ser alvos de ataques - abordando, por todos os ângulos possíveis, as fraquezas apresentadas. Os testes realizados nessa modalidade apresentam um alto nível de complexidade e profundidade que serão conduzidos manualmente por um analista sênior visando uma cobertura ampla e minuciosa da aplicação em questão.',
     btn: 'https://www.siteblindado.com/solucoes/pentest/',
-  }
+  },
 ];

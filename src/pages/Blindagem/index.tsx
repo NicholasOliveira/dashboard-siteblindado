@@ -9,8 +9,13 @@ const Blindagem = () => {
     if (item.category === 'blindagem_sites') {
       return <Card viewDescription={true} content={item} />;
     }
+    return false;
   });
-  return <Container><Row>{Products}</Row></Container>;
+  return (
+    <Container>
+      <Row>{Products}</Row>
+    </Container>
+  );
 };
 
 export default Blindagem;

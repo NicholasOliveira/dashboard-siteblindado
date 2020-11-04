@@ -33,7 +33,6 @@ const MenuBar = ({
       if (!subOption.children) {
         return (
           <div key={subOption.name}>
-
             <ListItem button key={subOption.name}>
               <Link className={classes.listitemIco} to={subOption.url}>
                 <Icon>{subOption.icon}</Icon><ListItemText className={classes.listitemText} inset primary={subOption.name} />

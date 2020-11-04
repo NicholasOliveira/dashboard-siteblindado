@@ -15,6 +15,13 @@ export const useStyles = makeStyles(theme => ({
   childrenRoot: {
     display: 'flex',
     flexWrap: 'wrap',
+    [theme.breakpoints.down('md')]: {
+      '& > *': {
+        margin: theme.spacing(2),
+        width: theme.spacing(32),
+        height: theme.spacing(32),
+      },
+    },
     justifyContent: 'center',
     '& > *': {
       margin: theme.spacing(2),
@@ -28,6 +35,14 @@ export const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     '& > *': {
       margin: theme.spacing(2),
+    },
+  },
+  [theme.breakpoints.down('md')]: {
+    paper: {
+      margin: theme.spacing(2),
+      width: '100%',
+      justifyContent: 'center',
+      height: theme.spacing(24),
     },
   },
   paper: {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import {
   AppBar,
   CssBaseline,
@@ -20,9 +21,10 @@ const Header = ({
   setMobileOpen: any;
 }) => {
   const classes = useStyles();
+  const cartSize = useSelector((state: any) => state.Cart.length);
+
   function handleHeaderToggle() {
     mobileOpen ? setMobileOpen(false) : setMobileOpen(true);
-    console.log(mobileOpen);
   }
 
   return (
@@ -47,7 +49,9 @@ const Header = ({
             </Typography>
             <BoxCart to="/cart">
               <ShoppingCart />
-              <span>(<strong>2</strong> items)</span>
+              <span>
+                (<strong>{cartSize}</strong> items)
+              </span>
             </BoxCart>
           </BoxHeader>
         </Toolbar>

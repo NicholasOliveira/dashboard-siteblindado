@@ -24,7 +24,8 @@ const Dashboard = () => {
     return (
       <Container>
         <CircularProgress />
-      </Container>);
+      </Container>
+    );
   }
   return (
     <div className={classes.root}>

@@ -5,9 +5,7 @@ import MenuBar from '../DrawerSite';
 
 // This menu has 2 mainly components Header and DrawerSite (Menu)
 
-const MenuSite = () => {
-  const [mobileOpen, setMobileOpen] = useState(true);
-
+const MenuSite = ({ mobileOpen, setMobileOpen }: any) => {
   return (
     <div>
       <MenuBar menuItems={menuIndex} mobileOpen={mobileOpen} />
