@@ -60,8 +60,6 @@ utilizado o json acima para listar os produtos.
 ### - Menu animado como no Gmail
 configurado o menu para ficar aninhado modelo gmail.
 
-![alt text](https://i.ibb.co/K0ydRFP/gmail.gif)
-
 
 ## **O que gostaria de ter feito ?**
 
