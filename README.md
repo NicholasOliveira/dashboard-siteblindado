@@ -1,8 +1,7 @@
-# **SB2W-Teste**
+# **DashBoard site blindado**
 
 ## **Intro**
 
-Desafio realizado em pedido a equipe da B2W.
 
 
 ![alt text](https://badgen.net/github/checks/styfle/packagephobia/main)  ![alt text](https://badgen.net/github/status/micromatch/micromatch/4.0.1)  ![alt text](https://badgen.net/github/status/zeit/hyper/master/ci)  ![alt text](https://badgen.net/github/license/micromatch/micromatch)  ![alt text](https://badgen.net/npm/types/tslib)
@@ -11,7 +10,7 @@ Desafio realizado em pedido a equipe da B2W.
 ## **Guia**
 
 ### - Recupere os dados
-Dados recuperados através dos Mocks já disponibilizados no projeto base.
+Dados recuperados através dos Mocks já disponibilizados.
 também foi adicionado um segundo Mock referente a Loja onde pode se consultar os produtos.
 
 Dados criado com formato de JSON, segue modelo.
@@ -31,12 +30,12 @@ export const ProductsList = [
 
 
 
-### - Crie os reducers/sagas/actions para utilizar os dados da api
+### - reducers/sagas/actions para utilizar os dados da api
 Criado um novo Reducer de Cart com intuito de gerenciar o estado do carrinho.
 
 
 
-### - Crie um dashboard com estes dados
+### - dashboard
 Feito uma Dashboard para visualização dos dados.
 
 Segue preview da Dashboard.
@@ -55,25 +54,10 @@ utilizado o json acima para listar os produtos.
 ![alt text](https://i.ibb.co/vLc8H9Q/Captura-de-Tela-2020-11-04-a-s-14-59-10.png)
 
 
-## **Pontos Extras**
-
-### - Menu animado como no Gmail
-configurado o menu para ficar aninhado modelo gmail.
-
-
-## **O que gostaria de ter feito ?**
-
- - Gostaria de ter adicionado as tipagem corretas ao projeto, porém utilizei any em todos as tipagem.
- - também poderia ter utilizado redux saga, porém como nao fiz a parte de login, nao senti necessidade de utilizar.
-
-
 ## **Quick-start**
 
 1. Instalar Yarn
 `npm install yarn -g`
-
-2. Git Clone 
-`git clone git@bitbucket.org:siteblindado/sb2w-portal.git`
 
 3. Startar Servidor Dev
 `yarn start`
