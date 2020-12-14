@@ -4,7 +4,7 @@
 
 
 
-![alt text](https://badgen.net/github/checks/styfle/packagephobia/main)  ![alt text](https://badgen.net/github/status/micromatch/micromatch/4.0.1)  ![alt text](https://badgen.net/github/status/zeit/hyper/master/ci)  ![alt text](https://badgen.net/github/license/micromatch/micromatch)  ![alt text](https://badgen.net/npm/types/tslib)
+![alt text](https://badgen.net/github/license/micromatch/micromatch) 
 
 
 ## **Guia**
